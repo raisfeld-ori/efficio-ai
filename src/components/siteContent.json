@@ -1,0 +1,296 @@
+{
+  "navbar": {
+    "links": [
+      { "label": "Features", "href": "#features" },
+      { "label": "How It Works", "href": "#how-it-works" },
+      { "label": "Use Cases", "href": "#use-cases" },
+      { "label": "Pricing", "href": "#pricing" }
+    ],
+    "cta": "Get Started",
+    "logoAlt": "Logo"
+  },
+  "hero": {
+    "title1": "Lorem Ipsum Dolor",
+    "title2": "Sit Amet Consectetur Adipiscing",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "primaryCta": "Lorem Trial",
+    "secondaryCta": "Watch Ipsum",
+    "trustedBy": "Lorem Trusted",
+    "trustedLogos": [
+      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 1" },
+      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 2" },
+      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 3" },
+      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 4" }
+    ],
+    "mainImage": { "src": "/logo.png", "alt": "AI Architecture Object Counter" }
+  },
+  "features": {
+    "heading": "Lorem Ipsum Features",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "features": [
+      {
+        "title": "Accurate Object Detection",
+        "description": "Our AI precisely identifies and counts architectural elements with 99.8% accuracy.",
+        "image": "/placeholder.svg?height=200&width=300"
+      },
+      {
+        "title": "Automated Measurements",
+        "description": "Automatically calculate dimensions and sizes of all detected objects in your architectural plans.",
+        "image": "/placeholder.svg?height=200&width=300"
+      },
+      {
+        "title": "Real-time Analysis",
+        "description": "Process architectural drawings and 3D models in real-time with instant feedback and results.",
+        "image": "/placeholder.svg?height=200&width=300"
+      },
+      {
+        "title": "Detailed Reports",
+        "description": "Generate comprehensive reports with object counts, measurements, and visual annotations.",
+        "image": "/placeholder.svg?height=200&width=300"
+      },
+      {
+        "title": "Cloud Integration",
+        "description": "Seamlessly integrate with popular cloud storage and architectural software platforms.",
+        "image": "/placeholder.svg?height=200&width=300"
+      },
+      {
+        "title": "Collaboration Tools",
+        "description": "Share results with team members and clients with built-in collaboration features.",
+        "image": "/placeholder.svg?height=200&width=300"
+      }
+    ]
+  },
+  "howItWorks": {
+    "heading": "How It Works",
+    "description": "Our streamlined process makes architectural object counting and sizing effortless",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Upload Your Plans",
+        "description": "Upload your architectural drawings, blueprints, or 3D models to our secure platform.",
+        "color": "from-blue-400 to-blue-600"
+      },
+      {
+        "number": "02",
+        "title": "AI Processing",
+        "description": "Our advanced AI algorithms analyze your plans to identify and count all architectural objects.",
+        "color": "from-cyan-400 to-cyan-600"
+      },
+      {
+        "number": "03",
+        "title": "Automated Measurements",
+        "description": "The system automatically calculates dimensions and sizes of all detected objects.",
+        "color": "from-teal-400 to-teal-600"
+      },
+      {
+        "number": "04",
+        "title": "Review Results",
+        "description": "Access detailed reports with object counts, measurements, and visual annotations.",
+        "color": "from-blue-500 to-cyan-500"
+      }
+    ],
+    "cta": "Try It Now"
+  },
+  "useCases": {
+    "heading": "Lorem Ipsum Use Cases",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "useCases": [
+      {
+        "title": "Lorem Ipsum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "/placeholder.svg?height=400&width=600",
+        "benefits": [
+          "Lorem ipsum dolor sit amet",
+          "Consectetur adipiscing elit",
+          "Sed do eiusmod tempor"
+        ]
+      },
+      {
+        "title": "Dolor Sit Amet",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "/placeholder.svg?height=400&width=600",
+        "benefits": [
+          "Ut enim ad minim veniam",
+          "Quis nostrud exercitation",
+          "Ullamco laboris nisi ut aliquip"
+        ]
+      },
+      {
+        "title": "Consectetur Adipiscing",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "image": "/placeholder.svg?height=400&width=600",
+        "benefits": [
+          "Ex ea commodo consequat",
+          "Duis aute irure dolor",
+          "In reprehenderit in voluptate"
+        ]
+      },
+      {
+        "title": "Elit Sed Do",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        "image": "/placeholder.svg?height=400&width=600",
+        "benefits": [
+          "Cillum dolore eu fugiat",
+          "Nulla pariatur",
+          "Excepteur sint occaecat cupidatat"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Lorem Ipsum Testimonials",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "testimonials": [
+      {
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "name": "John Doe",
+        "title": "CEO, Example Company",
+        "image": "/placeholder.svg?height=100&width=100"
+      },
+      {
+        "quote": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "name": "Jane Smith",
+        "title": "Architect, Ipsum Studio",
+        "image": "/placeholder.svg?height=100&width=100"
+      },
+      {
+        "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "name": "Alice Johnson",
+        "title": "Designer, Lorem Interiors",
+        "image": "/placeholder.svg?height=100&width=100"
+      },
+      {
+        "quote": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "name": "Bob Williams",
+        "title": "Manager, Dolor Sit Amet",
+        "image": "/placeholder.svg?height=100&width=100"
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Simple, Transparent Pricing",
+    "description": "Choose the plan that best fits your architectural needs",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$99",
+        "period": "per month",
+        "description": "Perfect for small architectural firms and individual professionals",
+        "features": [
+          "Up to 10 projects per month",
+          "Basic object detection",
+          "Standard measurements",
+          "Email support",
+          "PDF reports"
+        ],
+        "cta": "Start Free Trial",
+        "popular": false,
+        "color": "from-blue-500 to-blue-700"
+      },
+      {
+        "name": "Professional",
+        "price": "$249",
+        "period": "per month",
+        "description": "Ideal for medium-sized architectural and construction firms",
+        "features": [
+          "Up to 50 projects per month",
+          "Advanced object detection",
+          "Precise measurements",
+          "Priority support",
+          "Interactive reports",
+          "Team collaboration",
+          "API access"
+        ],
+        "cta": "Start Free Trial",
+        "popular": true,
+        "color": "from-cyan-500 to-cyan-700"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "tailored pricing",
+        "description": "For large architectural firms and construction companies",
+        "features": [
+          "Unlimited projects",
+          "Premium object detection",
+          "Ultra-precise measurements",
+          "24/7 dedicated support",
+          "Custom integrations",
+          "Advanced analytics",
+          "White-labeling options",
+          "On-premise deployment"
+        ],
+        "cta": "Contact Sales",
+        "popular": false,
+        "color": "from-teal-500 to-teal-700"
+      }
+    ],
+    "customSolutionText": "Need a custom solution?",
+    "customSolutionCta": "Contact Our Sales Team"
+  },
+  "cta": {
+    "heading": "Ready to Transform Your Architectural Workflow?",
+    "description": "Join thousands of architects and construction professionals who are saving time and improving accuracy with our AI solution.",
+    "primaryCta": "Start Free 14-Day Trial",
+    "secondaryCta": "Schedule Demo",
+    "note": "No credit card required. Cancel anytime."
+  },
+  "footer": {
+    "companyName": "ArchCount AI",
+    "copyright":
+      "&copy; {year} ArchCount AI. All rights reserved.",
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          { "name": "Features", "href": "#features" },
+          { "name": "How It Works", "href": "#how-it-works" },
+          { "name": "Pricing", "href": "#pricing" },
+          { "name": "Case Studies", "href": "#" },
+          { "name": "Documentation", "href": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "name": "About Us", "href": "#" },
+          { "name": "Careers", "href": "#" },
+          { "name": "Blog", "href": "#" },
+          { "name": "Press", "href": "#" },
+          { "name": "Contact", "href": "#" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "name": "Help Center", "href": "#" },
+          { "name": "API Documentation", "href": "#" },
+          { "name": "Tutorials", "href": "#" },
+          { "name": "Webinars", "href": "#" },
+          { "name": "Partners", "href": "#" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "name": "Privacy Policy", "href": "#" },
+          { "name": "Terms of Service", "href": "#" },
+          { "name": "Cookie Policy", "href": "#" },
+          { "name": "GDPR", "href": "#" },
+          { "name": "Security", "href": "#" }
+        ]
+      }
+    ],
+    "socials": [
+      { "icon": "facebook", "href": "#" },
+      { "icon": "twitter", "href": "#" },
+      { "icon": "linkedin", "href": "#" },
+      { "icon": "instagram", "href": "#" }
+    ],
+    "footerLinks": [
+      { "name": "Privacy Policy", "href": "#" },
+      { "name": "Terms of Service", "href": "#" },
+      { "name": "Cookie Policy", "href": "#" }
+    ]
+  }
+}

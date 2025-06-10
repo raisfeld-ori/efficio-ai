@@ -2,52 +2,11 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import siteContent from "./siteContent.json"
 
 export default function Footer() {
+  const { footer } = siteContent
   const currentYear = new Date().getFullYear()
-
-  const footerLinks = [
-    {
-      title: "Product",
-      links: [
-        { name: "Features", href: "#features" },
-        { name: "How It Works", href: "#how-it-works" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "Case Studies", href: "#" },
-        { name: "Documentation", href: "#" },
-      ],
-    },
-    {
-      title: "Company",
-      links: [
-        { name: "About Us", href: "#" },
-        { name: "Careers", href: "#" },
-        { name: "Blog", href: "#" },
-        { name: "Press", href: "#" },
-        { name: "Contact", href: "#" },
-      ],
-    },
-    {
-      title: "Resources",
-      links: [
-        { name: "Help Center", href: "#" },
-        { name: "API Documentation", href: "#" },
-        { name: "Tutorials", href: "#" },
-        { name: "Webinars", href: "#" },
-        { name: "Partners", href: "#" },
-      ],
-    },
-    {
-      title: "Legal",
-      links: [
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
-        { name: "Cookie Policy", href: "#" },
-        { name: "GDPR", href: "#" },
-        { name: "Security", href: "#" },
-      ],
-    },
-  ]
 
   return (
     <footer className="bg-gray-900 text-gray-300 pt-16 pb-8">
@@ -58,7 +17,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">A</span>
               </div>
-              <span className="text-xl font-bold text-white">Lorem Ipsum</span>
+              <span className="text-xl font-bold text-white">{footer.companyName}</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -71,7 +30,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {footerLinks.map((column, index) => (
+          {footer.columns.map((column, index) => (
             <div key={index}>
               <h3 className="text-white font-semibold text-lg mb-4">{column.title}</h3>
               <ul className="space-y-3">
@@ -88,17 +47,15 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 mb-4 md:mb-0">&copy; {currentYear} ArchCount AI. All rights reserved.</p>
+          <p className="text-gray-500 mb-4 md:mb-0">
+            {footer.copyright.replace("{year}", currentYear.toString())}
+          </p>
           <div className="flex space-x-6">
-            <Link href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
-              Cookie Policy
-            </Link>
+            {footer.footerLinks.map((link, i) => (
+              <Link key={i} href={link.href} className="text-gray-500 hover:text-blue-400 transition-colors">
+                {link.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

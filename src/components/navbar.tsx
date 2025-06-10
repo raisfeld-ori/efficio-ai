@@ -4,6 +4,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import siteContent from "./siteContent.json"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,6 +18,8 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const { navbar } = siteContent
 
   return (
     <motion.nav
@@ -34,22 +37,21 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               className="w-40 h-10 rounded-lg flex items-center justify-center"
             >
-              <img className="w-full h-10" src="/logo.png" alt="Logo" />
+              <img className="w-full h-10" src="/logo.png" alt={navbar.logoAlt} />
             </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <NavLink href="#features">Features</NavLink>
-            <NavLink href="#how-it-works">How It Works</NavLink>
-            <NavLink href="#use-cases">Use Cases</NavLink>
-            <NavLink href="#pricing">Pricing</NavLink>
+            {navbar.links.map(link => (
+              <NavLink key={link.href} href={link.href}>{link.label}</NavLink>
+            ))}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-full font-medium"
             >
-              Get Started
+              {navbar.cta}
             </motion.button>
           </div>
 
@@ -78,23 +80,16 @@ export default function Navbar() {
             className="md:hidden mt-4 pb-4"
           >
             <div className="flex flex-col space-y-4">
-              <MobileNavLink href="#features" onClick={() => setMobileMenuOpen(false)}>
-                Features
-              </MobileNavLink>
-              <MobileNavLink href="#how-it-works" onClick={() => setMobileMenuOpen(false)}>
-                How It Works
-              </MobileNavLink>
-              <MobileNavLink href="#use-cases" onClick={() => setMobileMenuOpen(false)}>
-                Use Cases
-              </MobileNavLink>
-              <MobileNavLink href="#pricing" onClick={() => setMobileMenuOpen(false)}>
-                Pricing
-              </MobileNavLink>
+              {navbar.links.map(link => (
+                <MobileNavLink key={link.href} href={link.href} onClick={() => setMobileMenuOpen(false)}>
+                  {link.label}
+                </MobileNavLink>
+              ))}
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-full font-medium w-full"
               >
-                Get Started
+                {navbar.cta}
               </motion.button>
             </div>
           </motion.div>

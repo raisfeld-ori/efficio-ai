@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { gsap } from "gsap"
+import siteContent from "./siteContent.json"
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -12,6 +13,8 @@ export default function Hero() {
       gsap.fromTo(".hero-image", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1, delay: 0.5 })
     }
   }, [])
+
+  const { hero } = siteContent
 
   return (
     <div ref={heroRef} className="pt-28 pb-20 md:pt-32 md:pb-28 bg-gradient-to-b from-gray-50 to-white">
@@ -24,9 +27,9 @@ export default function Hero() {
               transition={{ duration: 0.7 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
             >
-              <span className="block">Lorem Ipsum Dolor</span>
+              <span className="block">{hero.title1}</span>
               <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Sit Amet Consectetur Adipiscing
+                {hero.title2}
               </span>
             </motion.h1>
 
@@ -36,7 +39,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {hero.description}
             </motion.p>
 
             <motion.div
@@ -50,7 +53,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-3 rounded-full font-medium text-lg shadow-lg"
               >
-                Lorem Trial
+                {hero.primaryCta}
               </motion.button>
 
               <motion.button
@@ -58,7 +61,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-blue-600 border border-blue-600 px-8 py-3 rounded-full font-medium text-lg"
               >
-                Watch Ipsum
+                {hero.secondaryCta}
               </motion.button>
             </motion.div>
           </div>
@@ -68,8 +71,8 @@ export default function Hero() {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-100 rounded-full filter blur-3xl opacity-70"></div>
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-cyan-100 rounded-full filter blur-3xl opacity-70"></div>
               <img
-                src="/logo.png"
-                alt="AI Architecture Object Counter"
+                src={hero.mainImage.src}
+                alt={hero.mainImage.alt}
                 className="w-full h-auto rounded-xl shadow-2xl relative z-10"
               />
             </div>
@@ -83,12 +86,11 @@ export default function Hero() {
           className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16"
         >
           <div className="text-center">
-            <p className="text-gray-500 text-sm uppercase font-medium">Lorem Trusted</p>
+            <p className="text-gray-500 text-sm uppercase font-medium">{hero.trustedBy}</p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-4">
-              <img src="/placeholder.svg?height=30&width=120" alt="Company 1" className="h-8 opacity-70" />
-              <img src="/placeholder.svg?height=30&width=120" alt="Company 2" className="h-8 opacity-70" />
-              <img src="/placeholder.svg?height=30&width=120" alt="Company 3" className="h-8 opacity-70" />
-              <img src="/placeholder.svg?height=30&width=120" alt="Company 4" className="h-8 opacity-70" />
+              {hero.trustedLogos.map((logo, i) => (
+                <img key={i} src={logo.src} alt={logo.alt} className="h-8 opacity-70" />
+              ))}
             </div>
           </div>
         </motion.div>

@@ -6,6 +6,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Autoplay } from "swiper/modules"
+import siteContent from "./siteContent.json"
 
 // Import Swiper styles
 import "swiper/css"
@@ -38,32 +39,7 @@ export default function Testimonials() {
     }
   }, [])
 
-  const testimonials = [
-    {
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      name: "John Doe",
-      title: "CEO, Example Company",
-      image: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      name: "Jane Smith",
-      title: "Architect, Ipsum Studio",
-      image: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      name: "Alice Johnson",
-      title: "Designer, Lorem Interiors",
-      image: "/placeholder.svg?height=100&width=100",
-    },
-    {
-      quote: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      name: "Bob Williams",
-      title: "Manager, Dolor Sit Amet",
-      image: "/placeholder.svg?height=100&width=100",
-    },
-  ]
+  const { testimonials } = siteContent
 
   return (
     <section id="testimonials" ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -76,11 +52,11 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="testimonial-heading text-3xl md:text-4xl font-bold mb-4 relative">
-            Lorem Ipsum Testimonials
+            {testimonials.heading}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded"></div>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {testimonials.description}
           </p>
         </motion.div>
 
@@ -93,14 +69,14 @@ export default function Testimonials() {
             autoplay={{ delay: 5000 }}
             className="testimonials-swiper"
           >
-            {testimonials.map((testimonial, index) => (
+            {testimonials.testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white rounded-xl p-8 md:p-10 shadow-lg">
                   <div className="flex flex-col md:flex-row items-center md:items-start">
                     <div className="mb-6 md:mb-0 md:mr-8">
                       <div className="w-20 h-20 rounded-full overflow-hidden">
                         <img
-                          src={testimonial.image || "/placeholder.svg"}
+                          src={testimonial.image}
                           alt={testimonial.name}
                           className="w-full h-full object-cover"
                         />

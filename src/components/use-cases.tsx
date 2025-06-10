@@ -6,6 +6,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, Autoplay } from "swiper/modules"
+import siteContent from "./siteContent.json"
 
 // Import Swiper styles
 import "swiper/css"
@@ -39,48 +40,7 @@ export default function UseCases() {
     }
   }, [])
 
-  const useCases = [
-    {
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/placeholder.svg?height=400&width=600",
-      benefits: [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit",
-        "Sed do eiusmod tempor",
-      ],
-    },
-    {
-      title: "Dolor Sit Amet",
-      description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "/placeholder.svg?height=400&width=600",
-      benefits: [
-        "Ut enim ad minim veniam",
-        "Quis nostrud exercitation",
-        "Ullamco laboris nisi ut aliquip",
-      ],
-    },
-    {
-      title: "Consectetur Adipiscing",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      image: "/placeholder.svg?height=400&width=600",
-      benefits: [
-        "Ex ea commodo consequat",
-        "Duis aute irure dolor",
-        "In reprehenderit in voluptate",
-      ],
-    },
-    {
-      title: "Elit Sed Do",
-      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      image: "/placeholder.svg?height=400&width=600",
-      benefits: [
-        "Cillum dolore eu fugiat",
-        "Nulla pariatur",
-        "Excepteur sint occaecat cupidatat",
-      ],
-    },
-  ]
+  const { useCases } = siteContent
 
   return (
     <section id="use-cases" ref={sectionRef} className="py-20 bg-white">
@@ -93,11 +53,11 @@ export default function UseCases() {
           className="text-center mb-16"
         >
           <h2 className="use-case-title text-3xl md:text-4xl font-bold mb-4 relative">
-            Lorem Ipsum Use Cases
+            {useCases.heading}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-3 w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded"></div>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {useCases.description}
           </p>
         </motion.div>
 
@@ -122,12 +82,12 @@ export default function UseCases() {
             }}
             className="use-cases-swiper"
           >
-            {useCases.map((useCase, index) => (
+            {useCases.useCases.map((useCase, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white rounded-xl overflow-hidden shadow-lg h-full flex flex-col">
                   <div className="h-48 overflow-hidden">
                     <img
-                      src={useCase.image || "/placeholder.svg"}
+                      src={useCase.image}
                       alt={useCase.title}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />
@@ -146,7 +106,7 @@ export default function UseCases() {
                           >
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span>Lorem ipsum dolor sit amet</span>
+                          <span>{benefit}</span>
                         </li>
                       ))}
                     </ul>
