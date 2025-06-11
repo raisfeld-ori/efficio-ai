@@ -1,29 +1,34 @@
 {
   "navbar": {
     "links": [
-      { "label": "Features", "href": "#features" },
-      { "label": "How It Works", "href": "#how-it-works" },
-      { "label": "Use Cases", "href": "#use-cases" },
-      { "label": "Pricing", "href": "#pricing" }
+      { "label": "Features",       "href": "#features" },
+      { "label": "How It Works",   "href": "#how-it-works" },
+      { "label": "Use Cases",      "href": "#use-cases" },
+      { "label": "Pricing",        "href": "#pricing" }
     ],
-    "cta": "Get Started",
-    "logoAlt": "Logo"
+    "cta": "Start Free Trial",
+    "logoAlt": "ArchCount AI Logo"
   },
+
   "hero": {
-    "title1": "Lorem Ipsum Dolor",
-    "title2": "Sit Amet Consectetur Adipiscing",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "primaryCta": "Lorem Trial",
-    "secondaryCta": "Watch Ipsum",
-    "trustedBy": "Lorem Trusted",
+    "title1": "Automate Smarter.",
+    "title2": "Grow Faster.",
+    "description": "Efficio AI is your end-to-end automation platform—no dev team needed. Streamline repetitive workflows, sync your favorite apps, and reclaim hours of manual work every week.",
+    "primaryCta": "Start Free Trial",
+    "secondaryCta": "Watch Demo",
+    "trustedBy": "Trusted by",
     "trustedLogos": [
-      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 1" },
-      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 2" },
-      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 3" },
-      { "src": "/placeholder.svg?height=30&width=120", "alt": "Company 4" }
+      { "src": "/logos/slack.svg",    "alt": "Slack" },
+      { "src": "/logos/hubspot.svg",  "alt": "HubSpot" },
+      { "src": "/logos/shopify.svg",  "alt": "Shopify" },
+      { "src": "/logos/asana.svg",    "alt": "Asana" }
     ],
-    "mainImage": { "src": "/logo.png", "alt": "AI Architecture Object Counter" }
+    "mainImage": {
+      "src": "/hero-illustration.png",
+      "alt": "Workflow automation illustration"
+    }
   },
+
   "features": {
     "heading": "Lorem Ipsum Features",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -60,6 +65,7 @@
       }
     ]
   },
+
   "howItWorks": {
     "heading": "How It Works",
     "description": "Our streamlined process makes architectural object counting and sizing effortless",
@@ -91,6 +97,7 @@
     ],
     "cta": "Try It Now"
   },
+
   "useCases": {
     "heading": "Lorem Ipsum Use Cases",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -137,6 +144,7 @@
       }
     ]
   },
+
   "testimonials": {
     "heading": "Lorem Ipsum Testimonials",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -167,6 +175,7 @@
       }
     ]
   },
+
   "pricing": {
     "heading": "Simple, Transparent Pricing",
     "description": "Choose the plan that best fits your architectural needs",
@@ -228,6 +237,7 @@
     "customSolutionText": "Need a custom solution?",
     "customSolutionCta": "Contact Our Sales Team"
   },
+
   "cta": {
     "heading": "Ready to Transform Your Architectural Workflow?",
     "description": "Join thousands of architects and construction professionals who are saving time and improving accuracy with our AI solution.",
@@ -235,62 +245,62 @@
     "secondaryCta": "Schedule Demo",
     "note": "No credit card required. Cancel anytime."
   },
+
   "footer": {
     "companyName": "ArchCount AI",
-    "copyright":
-      "&copy; {year} ArchCount AI. All rights reserved.",
+    "copyright": "© 2025 ArchCount AI. All rights reserved.",
     "columns": [
       {
         "title": "Product",
         "links": [
-          { "name": "Features", "href": "#features" },
-          { "name": "How It Works", "href": "#how-it-works" },
-          { "name": "Pricing", "href": "#pricing" },
-          { "name": "Case Studies", "href": "#" },
-          { "name": "Documentation", "href": "#" }
+          { "name": "Features",               "href": "#features" },
+          { "name": "How It Works",           "href": "#how-it-works" },
+          { "name": "Pricing",                "href": "#pricing" },
+          { "name": "Case Studies",           "href": "#" },
+          { "name": "Documentation",          "href": "#" }
         ]
       },
       {
         "title": "Company",
         "links": [
-          { "name": "About Us", "href": "#" },
-          { "name": "Careers", "href": "#" },
-          { "name": "Blog", "href": "#" },
-          { "name": "Press", "href": "#" },
-          { "name": "Contact", "href": "#" }
+          { "name": "About Us",               "href": "#" },
+          { "name": "Careers",                "href": "#" },
+          { "name": "Blog",                   "href": "#" },
+          { "name": "Press",                  "href": "#" },
+          { "name": "Contact",                "href": "#" }
         ]
       },
       {
         "title": "Resources",
         "links": [
-          { "name": "Help Center", "href": "#" },
-          { "name": "API Documentation", "href": "#" },
-          { "name": "Tutorials", "href": "#" },
-          { "name": "Webinars", "href": "#" },
-          { "name": "Partners", "href": "#" }
+          { "name": "Help Center",            "href": "#" },
+          { "name": "API Documentation",      "href": "#" },
+          { "name": "Tutorials",              "href": "#" },
+          { "name": "Webinars",               "href": "#" },
+          { "name": "Partners",               "href": "#" }
         ]
       },
       {
         "title": "Legal",
         "links": [
-          { "name": "Privacy Policy", "href": "#" },
-          { "name": "Terms of Service", "href": "#" },
-          { "name": "Cookie Policy", "href": "#" },
-          { "name": "GDPR", "href": "#" },
-          { "name": "Security", "href": "#" }
+          { "name": "Privacy Policy",         "href": "#" },
+          { "name": "Terms of Service",       "href": "#" },
+          { "name": "Cookie Policy",          "href": "#" },
+          { "name": "GDPR",                   "href": "#" },
+          { "name": "Security",               "href": "#" }
         ]
       }
     ],
     "socials": [
-      { "icon": "facebook", "href": "#" },
-      { "icon": "twitter", "href": "#" },
-      { "icon": "linkedin", "href": "#" },
-      { "icon": "instagram", "href": "#" }
+      { "icon": "facebook",   "href": "#" },
+      { "icon": "twitter",    "href": "#" },
+      { "icon": "linkedin",   "href": "#" },
+      { "icon": "instagram",  "href": "#" }
     ],
     "footerLinks": [
-      { "name": "Privacy Policy", "href": "#" },
+      { "name": "Privacy Policy",   "href": "#" },
       { "name": "Terms of Service", "href": "#" },
-      { "name": "Cookie Policy", "href": "#" }
+      { "name": "Cookie Policy",    "href": "#" }
     ]
   }
 }
