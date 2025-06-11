@@ -1,10 +1,10 @@
 {
   "navbar": {
     "links": [
-      { "label": "Features",       "href": "#features" },
-      { "label": "How It Works",   "href": "#how-it-works" },
-      { "label": "Use Cases",      "href": "#use-cases" },
-      { "label": "Pricing",        "href": "#pricing" }
+      { "label": "Features",     "href": "#features" },
+      { "label": "How It Works", "href": "#how-it-works" },
+      { "label": "Use Cases",    "href": "#use-cases" },
+      { "label": "Pricing",      "href": "#pricing" }
     ],
     "cta": "Start Free Trial",
     "logoAlt": "ArchCount AI Logo"
@@ -30,37 +30,37 @@
   },
 
   "features": {
-    "heading": "Lorem Ipsum Features",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "heading": "What You Can Automate",
+    "description": "Whether you’re in architecture, construction or facilities management, Efficio AI handles the busywork so you can focus on design and delivery.",
     "features": [
       {
         "title": "Accurate Object Detection",
-        "description": "Our AI precisely identifies and counts architectural elements with 99.8% accuracy.",
+        "description": "Efficio AI spots every beam, column, window and door across 2D plans and 3D models—with 99.8% precision.",
         "image": "/placeholder.svg?height=200&width=300"
       },
       {
         "title": "Automated Measurements",
-        "description": "Automatically calculate dimensions and sizes of all detected objects in your architectural plans.",
+        "description": "Never measure by hand again: instantly calculate lengths, areas, volumes and clearances for every detected element.",
         "image": "/placeholder.svg?height=200&width=300"
       },
       {
         "title": "Real-time Analysis",
-        "description": "Process architectural drawings and 3D models in real-time with instant feedback and results.",
+        "description": "Get live feedback as you upload or tweak your drawings—spot missing walls, overlaps or dimension inconsistencies on the spot.",
         "image": "/placeholder.svg?height=200&width=300"
       },
       {
         "title": "Detailed Reports",
-        "description": "Generate comprehensive reports with object counts, measurements, and visual annotations.",
+        "description": "Download PDF or CSV summaries showing object counts, dimensions, annotated screenshots and change-logs for audit trails.",
         "image": "/placeholder.svg?height=200&width=300"
       },
       {
-        "title": "Cloud Integration",
-        "description": "Seamlessly integrate with popular cloud storage and architectural software platforms.",
+        "title": "Cloud & BIM Integration",
+        "description": "Sync with Google Drive, Dropbox, Revit, ArchiCAD and more—Efficio AI slots right into your existing toolchain.",
         "image": "/placeholder.svg?height=200&width=300"
       },
       {
-        "title": "Collaboration Tools",
-        "description": "Share results with team members and clients with built-in collaboration features.",
+        "title": "Team Collaboration",
+        "description": "Share projects, assign review tasks, and leave comments directly on snapshots so colleagues and clients stay in the loop.",
         "image": "/placeholder.svg?height=200&width=300"
       }
     ]
@@ -68,30 +68,30 @@
 
   "howItWorks": {
     "heading": "How It Works",
-    "description": "Our streamlined process makes architectural object counting and sizing effortless",
+    "description": "In four simple steps, upload your files, let our AI do the heavy lifting, then review and export your results.",
     "steps": [
       {
         "number": "01",
         "title": "Upload Your Plans",
-        "description": "Upload your architectural drawings, blueprints, or 3D models to our secure platform.",
+        "description": "Drag-and-drop DWG, PDF or IFC files into our secure portal. No conversion needed.",
         "color": "from-blue-400 to-blue-600"
       },
       {
         "number": "02",
         "title": "AI Processing",
-        "description": "Our advanced AI algorithms analyze your plans to identify and count all architectural objects.",
+        "description": "Our neural network analyzes your layers, identifies objects and flags anomalies in under 60 seconds.",
         "color": "from-cyan-400 to-cyan-600"
       },
       {
         "number": "03",
         "title": "Automated Measurements",
-        "description": "The system automatically calculates dimensions and sizes of all detected objects.",
+        "description": "Efficio AI extracts dimensions, calculates areas/volumes and verifies scale—so you never miss a critical size.",
         "color": "from-teal-400 to-teal-600"
       },
       {
         "number": "04",
-        "title": "Review Results",
-        "description": "Access detailed reports with object counts, measurements, and visual annotations.",
+        "title": "Review & Export",
+        "description": "Browse a live preview of counts and measurements. Then export annotated drawings, spreadsheets or share a live review link.",
         "color": "from-blue-500 to-cyan-500"
       }
     ],
@@ -99,78 +99,78 @@
   },
 
   "useCases": {
-    "heading": "Lorem Ipsum Use Cases",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "heading": "Real-World Use Cases",
+    "description": "See how different teams leverage Efficio AI to save days of manual work every week.",
     "useCases": [
       {
-        "title": "Lorem Ipsum",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title": "Architectural QC",
+        "description": "Design firm running code-compliance checks.",
         "image": "/placeholder.svg?height=400&width=600",
         "benefits": [
-          "Lorem ipsum dolor sit amet",
-          "Consectetur adipiscing elit",
-          "Sed do eiusmod tempor"
+          "Instantly verify minimum room sizes",
+          "Catch missing fire exits or stairwells",
+          "Reduce review cycles by 75%"
         ]
       },
       {
-        "title": "Dolor Sit Amet",
-        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Cost Estimation",
+        "description": "Quantity surveyors preparing bids.",
         "image": "/placeholder.svg?height=400&width=600",
         "benefits": [
-          "Ut enim ad minim veniam",
-          "Quis nostrud exercitation",
-          "Ullamco laboris nisi ut aliquip"
+          "Auto-count walls, doors & windows",
+          "Generate material take-off reports",
+          "Accelerate RFP responses by 3×"
         ]
       },
       {
-        "title": "Consectetur Adipiscing",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "title": "Renovation Planning",
+        "description": "Contractors assessing existing blueprints.",
         "image": "/placeholder.svg?height=400&width=600",
         "benefits": [
-          "Ex ea commodo consequat",
-          "Duis aute irure dolor",
-          "In reprehenderit in voluptate"
+          "Identify load-bearing members",
+          "Measure clearances for new MEP runs",
+          "Minimize onsite surprises"
         ]
       },
       {
-        "title": "Elit Sed Do",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+        "title": "Facility Management",
+        "description": "FM teams updating as-built data.",
         "image": "/placeholder.svg?height=400&width=600",
         "benefits": [
-          "Cillum dolore eu fugiat",
-          "Nulla pariatur",
-          "Excepteur sint occaecat cupidatat"
+          "Sync room counts with asset registers",
+          "Track decal changes over time",
+          "Keep CAD archives up to date"
         ]
       }
     ]
   },
 
   "testimonials": {
-    "heading": "Lorem Ipsum Testimonials",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "heading": "What Our Customers Say",
+    "description": "Hear from architects and engineers who have transformed their workflows with Efficio AI.",
     "testimonials": [
       {
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "name": "John Doe",
-        "title": "CEO, Example Company",
+        "quote": "Efficio AI cut our QC time in half—what used to take two days now takes under an hour.",
+        "name": "Maria López",
+        "title": "Senior Architect, Skyward Designs",
         "image": "/placeholder.svg?height=100&width=100"
       },
       {
-        "quote": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "name": "Jane Smith",
-        "title": "Architect, Ipsum Studio",
+        "quote": "Switching to Efficio AI for our take-offs boosted our bid throughput by 200%.",
+        "name": "David Nguyen",
+        "title": "Head of Estimating, BuildPro Inc.",
         "image": "/placeholder.svg?height=100&width=100"
       },
       {
-        "quote": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "name": "Alice Johnson",
-        "title": "Designer, Lorem Interiors",
+        "quote": "I love how I can share a single link with clients and walk them through every annotation.",
+        "name": "Sarah Patel",
+        "title": "Facilities Manager, GreenCore FM",
         "image": "/placeholder.svg?height=100&width=100"
       },
       {
-        "quote": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "name": "Bob Williams",
-        "title": "Manager, Dolor Sit Amet",
+        "quote": "The collaboration tools in Efficio AI keep our design reviews on track and under budget.",
+        "name": "Emily Chen",
+        "title": "Project Manager, Urban Developments",
         "image": "/placeholder.svg?height=100&width=100"
       }
     ]
@@ -178,7 +178,7 @@
 
   "pricing": {
     "heading": "Simple, Transparent Pricing",
-    "description": "Choose the plan that best fits your architectural needs",
+    "description": "Pick a plan that aligns with your team size and workflow needs.",
     "plans": [
       {
         "name": "Starter",
@@ -253,41 +253,41 @@
       {
         "title": "Product",
         "links": [
-          { "name": "Features",               "href": "#features" },
-          { "name": "How It Works",           "href": "#how-it-works" },
-          { "name": "Pricing",                "href": "#pricing" },
-          { "name": "Case Studies",           "href": "#" },
-          { "name": "Documentation",          "href": "#" }
+          { "name": "Features",       "href": "#features" },
+          { "name": "How It Works",   "href": "#how-it-works" },
+          { "name": "Pricing",        "href": "#pricing" },
+          { "name": "Case Studies",   "href": "#" },
+          { "name": "Documentation",  "href": "#" }
         ]
       },
       {
         "title": "Company",
         "links": [
-          { "name": "About Us",               "href": "#" },
-          { "name": "Careers",                "href": "#" },
-          { "name": "Blog",                   "href": "#" },
-          { "name": "Press",                  "href": "#" },
-          { "name": "Contact",                "href": "#" }
+          { "name": "About Us",       "href": "#" },
+          { "name": "Careers",        "href": "#" },
+          { "name": "Blog",           "href": "#" },
+          { "name": "Press",          "href": "#" },
+          { "name": "Contact",        "href": "#" }
         ]
       },
       {
         "title": "Resources",
         "links": [
-          { "name": "Help Center",            "href": "#" },
-          { "name": "API Documentation",      "href": "#" },
-          { "name": "Tutorials",              "href": "#" },
-          { "name": "Webinars",               "href": "#" },
-          { "name": "Partners",               "href": "#" }
+          { "name": "Help Center",        "href": "#" },
+          { "name": "API Documentation",  "href": "#" },
+          { "name": "Tutorials",          "href": "#" },
+          { "name": "Webinars",           "href": "#" },
+          { "name": "Partners",           "href": "#" }
         ]
       },
       {
         "title": "Legal",
         "links": [
-          { "name": "Privacy Policy",         "href": "#" },
-          { "name": "Terms of Service",       "href": "#" },
-          { "name": "Cookie Policy",          "href": "#" },
-          { "name": "GDPR",                   "href": "#" },
-          { "name": "Security",               "href": "#" }
+          { "name": "Privacy Policy",     "href": "#" },
+          { "name": "Terms of Service",   "href": "#" },
+          { "name": "Cookie Policy",      "href": "#" },
+          { "name": "GDPR",               "href": "#" },
+          { "name": "Security",           "href": "#" }
         ]
       }
     ],
@@ -298,9 +298,9 @@
       { "icon": "instagram",  "href": "#" }
     ],
     "footerLinks": [
-      { "name": "Privacy Policy",   "href": "#" },
-      { "name": "Terms of Service", "href": "#" },
-      { "name": "Cookie Policy",    "href": "#" }
+      { "name": "Privacy Policy",     "href": "#" },
+      { "name": "Terms of Service",   "href": "#" },
+      { "name": "Cookie Policy",      "href": "#" }
     ]
   }
 }
